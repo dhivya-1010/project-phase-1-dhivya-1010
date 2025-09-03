@@ -1,0 +1,33 @@
+STARTUP IDEA VAULT - PROJECT EXPLANATION
+==========================================
+
+CLASSES:
+--------
+Idea.java
+    - id -> int (primary key)
+    - title -> String
+    - problem -> String
+    - solution -> String
+    - targetUsers -> String
+    - category -> String
+
+IdeaService.java
+    - addIdea() -> adds new idea to file
+    - viewAllIdeas() -> displays all ideas
+    - searchIdea() -> search by keyword
+    - getNextId() -> generates unique ID
+
+IdeaApp.java
+    - main() -> console menu interface
+    - Menu: Add, View, Search, Exit
+
+DATA STORAGE:
+------------
+File: ideas.txt
+Format: Space-separated values
+Fields: ID Title Problem Solution TargetUsers Category
+
+USAGE:
+------
+Compile: javac IdeaApp.java
+Run: java IdeaApp
